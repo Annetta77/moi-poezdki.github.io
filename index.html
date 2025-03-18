@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поездки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="page__header header">
+      <h1 class="header__title">Поездки</h1>
+      <div class="header__login login">
+        <a href="#" class="login__name">Заболоцкий К.О</a>
+        <button class="login__btn" type="button"></button>
+      </div>
+    </header>
+    <main class="page__main main">
+      <section class="main__header main-header">
+        <div class="main-header__cont">
+          <h2 class="main-header__title">Мои поездки</h2>
+          <div class="main-header__btn-cont">
+            <button class="main-header__btn" type="button">
+              Оформить поездку
+            </button>
+            <div class="plus-icon"></div>
+          </div>
+        </div>
+        <div class="form__cont">
+          <form action="#" method="post" class="main-header__form form">
+            <label class="form__label" for="first-date">Период с:</label>
+            <input
+              class="form__input"
+              type="date"
+              name="first-date"
+              id="first-date"
+              value="2024-02-22"
+              min="2024-02-22"
+              max="2024-12-31"
+            />
+            <label for="last-date" class="form__label">По:</label>
+            <div class="form__input-cont">
+              <input
+                placeholder="Выбрать..."
+                type="text"
+                onfocus="this.type='date'"
+                onblur="if(this.value==''){this.type='text'}"
+                name="last-date"
+                id="last-date"
+                class="form__input"
+              />
+            </div>
+            <div class="form__input-cont--search">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Поиск..."
+                class="form__input--search"
+              />
+            </div>
+            <button class="form__input-btn" type="reset">Сбросить все</button>
+            <p class="form__checkbox">
+              <input type="checkbox" name="archives" value="archives" />Показать
+              архивные поездки
+            </p>
+          </form>
+        </div>
+      </section>
+      <section class="main__trips trips">
+        <ul class="trips__list">
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000115</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000117</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000074</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">
+                Кременчуг-Константиновское, Петропавловск-Камчатский,
+                Новосибирск, Волго...
+              </p>
+              <p class="trips__text--hidden">
+                Кременчуг-Константиновское, Петропавловск-Камчатский,
+                Новосибирск, Волгоград, Саратов
+              </p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000115</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000211</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000118</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000119</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000120</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="trips__item-cont">
+              <h3 class="trips__title">№ поездки</h3>
+              <p class="trips__text--blue">000133</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Дата поездки</h3>
+              <p class="trips__text">22.02.2024 - 27.02.2024</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, план</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont--sum">
+              <h3 class="trips__title">Сумма, факт</h3>
+              <p class="trips__text">29 400,00</p>
+            </div>
+            <div class="trips__item-cont">
+              <h3 class="trips__title">Город</h3>
+              <p class="trips__text">Москва, Ярославль, Ижевск, Владимир</p>
+            </div>
+            <div class="trips__item-cont trips__item-cont--documents">
+              <h3 class="trips__title--documents">Статус</h3>
+              <p class="trips__text--documents">Документы</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
